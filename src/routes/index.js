@@ -1,5 +1,5 @@
-import Documents from '../pages/Documents';
-import Home from '../pages/Home';
+import Documents from '~/pages/Documents';
+import Home from '~/pages/Home';
 //Sử dụng để cho khách vãng lai
 const publisRoutes = [
   { path: '/', component: Home },
