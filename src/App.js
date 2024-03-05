@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { publisRoutes } from './frontEnd/routes';
+import { publisRoutes } from './routes';
 
 function App() {
   return (
