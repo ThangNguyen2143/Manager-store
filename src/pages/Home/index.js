@@ -1,11 +1,20 @@
-import { Link } from 'react-router-dom';
-function Home() {
-  return (
-    <>
-      <h1>Welcome to website</h1>
-      <Link to="/docs">Document</Link>
-    </>
-  );
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '~/components/Header';
+import Footer from '~/components/Footer';
+export default class Home extends Component {
+  render() {
+    return (
+      <div>
+        <Header></Header>
+        <h1>Body ở đây</h1>
+        <h1>Body ở đây</h1>
+        <h1>Body ở đây</h1>
+        <h1>Body ở đây</h1>
+        <h1>Body ở đây</h1>
+        <h1>Body ở đây</h1>
+        <Footer></Footer>
+      </div>
+    );
+  }
 }
-
-export default Home;
