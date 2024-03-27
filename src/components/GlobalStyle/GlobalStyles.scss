@@ -8,6 +8,7 @@
   --info: #09f;
   --hov-primary: rgba(51, 204, 255, 0.8);
   --hov-success: rgba(4, 195, 74, 0.6);
+  --default-layout-header-height: 60px;
 }
 * {
   padding: 0;
@@ -15,7 +16,74 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 100%;
+}
+
+.Header {
+  background-color: #f8f9fa;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.buttonColor {
+  background-color: var(--primary);
+}
+.search {
+  position: relative;
+  width: 361px;
+  height: var(--search-height);
+  padding-left: 16px;
+  display: flex;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 92px;
+  border: 1.5px solid transparent;
+
+  input {
+    flex: 1;
+    height: 100%;
+    color: var(--black);
+    font-size: 1.6rem;
+    caret-color: var(--primary);
+    background-color: transparent;
+  }
+
+  input:not(:placeholder-shown) ~ .search-btn {
+    color: rgba(22, 24, 35, 0.75);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: var(--search-top-spacer);
+    right: var(--search-button-width);
+    width: 1px;
+    height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+    background-color: rgba(22, 24, 35, 0.12);
+  }
+
+  &:focus-within {
+    border-color: rgba(22, 24, 35, 0.2);
+  }
+}
+.clear,
+.searchBtn {
+  width: var(--search-button-width);
+  height: 100%;
+  border-top-right-radius: var(--search-border-radius);
+  border-bottom-right-radius: var(--search-border-radius);
+  font-size: 1.8rem;
+  color: rgba(22, 24, 35, 0.34);
+  border: none;
+  background-color: var(--white);
+  border-radius: 92px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+
+  &:active {
+    background-color: rgba(22, 24, 35, 0.06);
+  }
 }
 
 body {
@@ -23,4 +91,63 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+.BodySale {
+  background-color: #f8f8fa;
+}
+.priceSale {
+  color: #f00;
+}
+.sale {
+  color: #fff;
+  justify-content: flex-start;
+  text-align: left;
+  background-color: #f00;
+}
+.price {
+  color: #888888;
+  text-decoration: line-through;
+}
+
+.Footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: 10rem;
+}
+.Footer h5 {
+  color: var(--primary);
+}
+.ft1 h3 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: cursive;
+  padding: 0.5rem 0;
+}
+.ft1 p {
+  padding: 0 5rem 0.8rem 0;
+  font-weight: 500;
+}
+.ft1 span {
+  color: var(--primary);
+}
+.ft2 ul {
+  list-style: none;
+  padding: 0;
+}
+.ft2 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.06rem;
+}
+.ft2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+.ft3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+}
+.ft3 i {
+  padding-right: 0.5rem;
 }
