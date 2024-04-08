@@ -25,11 +25,11 @@ function Body() {
             <Card.Body>
               <Card.Title>Một Đời Quản Trị( tái bản 2019)</Card.Title>
               <p>
-                <span class="priceSale">150.000đ </span>
-                <span class="sale "> -25%</span>
+                <span className="priceSale">150.000đ </span>
+                <span className="sale "> -25%</span>
               </p>
               <p>
-                <span class="price">200.000</span>
+                <span className="price">200.000</span>
               </p>
             </Card.Body>
             <Card.Footer>
