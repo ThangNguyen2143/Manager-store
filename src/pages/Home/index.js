@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '~/components/Header';
-import Footer from '~/components/Footer';
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
@@ -10,7 +8,6 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Container className="my-8">
           <Carousel data-bs-theme="dark">
             <Carousel.Item>
@@ -30,13 +27,13 @@ export default class Home extends Component {
             </div>
 
             <CardGroup>
-              <Card className="Body rounded-t-none ">
+              <Card className="  rounded-t-none ">
                 <Card.Img variant="top" src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934974164623.jpg" />
                 <Card.Body>
                   <Card.Title>Một Đời Quản Trị( tái bản 2019)</Card.Title>
 
                   <p>
-                    <span className="price">200.000</span>
+                    <span className="text-red-600">200.000</span>
                   </p>
                 </Card.Body>
                 <Card.Footer>
@@ -49,7 +46,7 @@ export default class Home extends Component {
                   <Card.Title>Một Đời Quản Trị( tái bản 2019)</Card.Title>
 
                   <p>
-                    <span className="price">200.000</span>
+                    <span className="text-red-600">200.000</span>
                   </p>
                 </Card.Body>
                 <Card.Footer>
@@ -62,7 +59,7 @@ export default class Home extends Component {
                   <Card.Title>Một Đời Quản Trị( tái bản 2019)</Card.Title>
 
                   <p>
-                    <span className="price">200.000</span>
+                    <span className="text-red-600">200.000</span>
                   </p>
                 </Card.Body>
                 <Card.Footer>
@@ -78,7 +75,7 @@ export default class Home extends Component {
                   <Card.Title>Một Đời Quản Trị( tái bản 2019)</Card.Title>
 
                   <p>
-                    <span className="price">200.000</span>
+                    <span className="text-red-600">200.000</span>
                   </p>
                 </Card.Body>
                 <Card.Footer>
@@ -94,7 +91,7 @@ export default class Home extends Component {
                   <Card.Title>Một Đời Quản Trị( tái bản 2019)</Card.Title>
 
                   <p>
-                    <span className="price">200.000</span>
+                    <span className="text-red-600">200.000</span>
                   </p>
                 </Card.Body>
                 <Card.Footer>
@@ -162,8 +159,6 @@ export default class Home extends Component {
             </Card>
           </div>
         </Container>
-
-        <Footer></Footer>
       </div>
     );
   }
