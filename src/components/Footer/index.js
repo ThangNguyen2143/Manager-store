@@ -60,10 +60,10 @@ function Footer() {
                 totam, facere eos iure voluptate.
               </p>
               <div className="footer-icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-linkedin-in"></i>
               </div>
             </div>
           </div>

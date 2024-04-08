@@ -18,14 +18,15 @@
 html {
   font-size: 100%;
 }
-
+// Có class Header hở
 .Header {
   background-color: #f8f9fa;
   padding-left: 50px;
   padding-right: 50px;
 }
-.buttonColor {
-  background-color: var(--primary);
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
 }
 .search {
   position: relative;
@@ -40,6 +41,7 @@ html {
   input {
     flex: 1;
     height: 100%;
+    border: none;
     color: var(--black);
     font-size: 1.6rem;
     caret-color: var(--primary);
@@ -59,10 +61,10 @@ html {
     height: calc(var(--search-height) - var(--search-top-spacer) * 2);
     background-color: rgba(22, 24, 35, 0.12);
   }
-
-  &:focus-within {
-    border-color: rgba(22, 24, 35, 0.2);
-  }
+  // Khỏi cần hover focus
+  // &:focus-within {
+  //   border-color: rgba(22, 24, 35, 0.2);
+  // }
 }
 .clear,
 .searchBtn {
@@ -73,9 +75,10 @@ html {
   font-size: 1.8rem;
   color: rgba(22, 24, 35, 0.34);
   border: none;
-  background-color: var(--white);
+  background-color: rgb(234 235 237);
   border-radius: 92px;
 
+  // Hover cái icon thôi
   &:hover {
     cursor: pointer;
     background-color: rgba(22, 24, 35, 0.03);
