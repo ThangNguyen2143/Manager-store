@@ -9,7 +9,7 @@ function Footer() {
       <div className="Footer">
         <div className="container ">
           <div className="row">
-            <div className="col-md-6 col-lg-4 col-12 ft3">
+            <div className="col-md-6 col-lg-4 col-12 ">
               <h5>Liên Hệ</h5>
               <p>
                 <FontAwesomeIcon icon={faPhone} /> +84 0123456789
