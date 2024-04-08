@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { publisRoutes } from './routes';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <>

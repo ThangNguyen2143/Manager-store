@@ -5,11 +5,11 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 function Footer() {
   return (
-    <>
+    <div>
       <div className="Footer">
-        <div className="container">
+        <div className="container ">
           <div className="row">
-            <div className="col-md-6 col-lg-4 col-12 ft-3">
+            <div className="col-md-6 col-lg-4 col-12 ft3">
               <h5>Liên Hệ</h5>
               <p>
                 <FontAwesomeIcon icon={faPhone} /> +84 0123456789
@@ -21,7 +21,7 @@ function Footer() {
                 <FontAwesomeIcon icon={faPaperPlane} /> ...., Xuân Khánh, Ninh Kiều, Cần Thơ.
               </p>
             </div>
-            <div className="col-md-6 col-lg-3 col-12 ft-2">
+            <div className="col-md-6 col-lg-3 col-12 ft2">
               <h5>Trung tâm hổ trợ</h5>
               <ul>
                 <li className="nav-item">
@@ -51,9 +51,9 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6 col-lg-5 col-12 ft-1">
+            <div className="col-md-6 col-lg-5 col-12 ft1">
               <h3>
-                <span>Chính sách</span> và điều khoản
+                Nhà sách <span>Thiên Lân</span>
               </h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ea quo ex ullam laboriosam magni
@@ -70,7 +70,7 @@ function Footer() {
         </div>
       </div>
       <div className="Last-footer"></div>
-    </>
+    </div>
   );
 }
 // (css tham khảo tại) https://www.youtube.com/watch?v=S-GiJt6qBtg
