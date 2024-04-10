@@ -13,9 +13,14 @@ const ProductPage = () => {
 
   const [activeImg, setActiveImage] = useState(images.img1);
 
+  const breadCrumbs = [
+    { name: 'Trang chủ', url: '/' },
+    { name: 'Sản phẩm', url: '/productpage' },
+  ];
+
   return (
     <div className="container ">
-      <Breadcrumbs />
+      <Breadcrumbs breadCrumbs={breadCrumbs} />
       <div className="flex flex-col justify-between lg:flex-row gap-16 lg:items-center my-8 ">
         <div className="flex flex-col gap-6 lg:w-2/5">
           <img src={activeImg} alt="" className="w-full h-full aspect-square object-cover rounded-xl" />
@@ -72,7 +77,7 @@ const ProductPage = () => {
       <div>
         <h1 className="text-3xl font-bold ml-5">Xin Giớ Thiệu</h1>
       </div>
-      <div className="my-8 sm:flex">
+      <div className="my-8 sm:flex justify-around">
         <Card className="mx-5 w-60">
           <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
           <Card.Body>

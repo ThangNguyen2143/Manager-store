@@ -100,8 +100,8 @@ export default class Home extends Component {
               </Card>
             </CardGroup>
           </div>
-          <div className="mt-8 sm:flex">
-            <Card className="mx-5 w-60">
+          <div className="mt-8 sm:flex justify-around">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">
@@ -109,7 +109,7 @@ export default class Home extends Component {
                 </Card.Title>
               </Card.Body>
             </Card>
-            <Card className="mx-5 w-60">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">
@@ -117,7 +117,7 @@ export default class Home extends Component {
                 </Card.Title>
               </Card.Body>
             </Card>
-            <Card className="mx-5 w-60">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">
@@ -125,7 +125,7 @@ export default class Home extends Component {
                 </Card.Title>
               </Card.Body>
             </Card>
-            <Card className="mx-5 w-60">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">
@@ -133,7 +133,7 @@ export default class Home extends Component {
                 </Card.Title>
               </Card.Body>
             </Card>
-            <Card className="mx-5 w-60">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">
@@ -141,7 +141,7 @@ export default class Home extends Component {
                 </Card.Title>
               </Card.Body>
             </Card>
-            <Card className="mx-5 w-60">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">
@@ -149,7 +149,7 @@ export default class Home extends Component {
                 </Card.Title>
               </Card.Body>
             </Card>
-            <Card className="mx-5 w-60">
+            <Card className="mx-4 ">
               <Card.Img variant="top" src="/images/TieuThuyet.jpg" />
               <Card.Body>
                 <Card.Title className="flex">

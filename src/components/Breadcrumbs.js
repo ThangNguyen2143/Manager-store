@@ -1,36 +1,22 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Breadcrumbs({ breadCrumbs }) {
-  const location = useLocation();
-
-  let currentLink = '';
-
-  const crumbs = location.pathname
-    .split('/')
-    .filter((crumb) => crumb !== '')
-    .map((crumb) => {
-      currentLink = +`/${crumb}`;
-
-      return (
-        // <div className="crumb" key={crumb}>
-        //   <Link to={'/'}>Trang chủ</Link>
-        //   <Link to={currentLink}>{crumb}</Link>
-        // </div>
-        <ol>
-          <li>
-            <Link to={'/'}>Trang chủ</Link>
-          </li>
-          {breadCrumbs?.map((breadCrumbs, crumb) => (
-            <li key={crumb}>
-              <Link to={currentLink}>{crumb}</Link>
-            </li>
-          ))}
-        </ol>
-      );
-    });
   return (
     <>
-      <div className="breadcrumbs">{crumbs}</div>
+      <section className="pt-4 sm:py-3">
+        <div className="max-w-screen-xl">
+          <ol className="inline-flex flex-wrap text-gray-600 space-x-1 md:space-x-3 items-center">
+            {breadCrumbs?.map((breadCrumb, index) => (
+              <li className="inline-flex items-center">
+                <Link href={breadCrumb.url} className="text-gray-600 hover:text-blue-600">
+                  {breadCrumb.name}
+                </Link>
+                {breadCrumbs?.length - 1 !== index && <i className="ml-3 text-gray-400 fa fa-chevron-right"></i>}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
     </>
   );
 }
