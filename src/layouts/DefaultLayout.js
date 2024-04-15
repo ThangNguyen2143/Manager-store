@@ -1,10 +1,10 @@
 import Footer from '~/components/Footer';
 import Header from '~/components/Header';
 
-function DefaultLayout({ children }) {
+function DefaultLayout({ children, isLogin = false }) {
   return (
     <>
-      <Header />
+      <Header isLogin={isLogin} />
       {children}
       <Footer />
     </>

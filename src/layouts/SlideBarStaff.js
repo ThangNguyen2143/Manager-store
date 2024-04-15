@@ -9,6 +9,8 @@ function SlideBarStaff() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  let currentURL = window.location.pathname;
+
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
@@ -24,15 +26,15 @@ function SlideBarStaff() {
         <Offcanvas.Body>
           <ListGroup as="ul">
             <ListGroup.Item disabled>Chức năng nhân viên</ListGroup.Item>
-            <ListGroup.Item as="li" action active>
-              Quản lý đơn hàng
+            <ListGroup.Item as="li" action active={currentURL === '/manager/orders'}>
+              <Link to={'/manager/orders'}>Quản lý đơn hàng</Link>
             </ListGroup.Item>
-            <ListGroup.Item as="li" action>
+            <ListGroup.Item as="li" action active={currentURL === '/new-bill'}>
               {/* Có thể tạo đơn nhập hàng và hoá đơn bán*/}
-              Tạo đơn hàng
+              <Link to={'/new-bill'}>Tạo đơn hàng</Link>
             </ListGroup.Item>
-            <ListGroup.Item as="li" action>
-              Kho hàng
+            <ListGroup.Item as="li" action active={currentURL === '/manager/products'}>
+              <Link to={'/manager/products'}>Kho hàng</Link>
             </ListGroup.Item>
           </ListGroup>
           <ListGroup as="ul" className="my-2">

@@ -66,24 +66,6 @@ html {
   //   border-color: rgba(22, 24, 35, 0.2);
   // }
 }
-<<<<<<< HEAD
-// .clear,
-// .searchBtn {
-//   width: var(--search-button-width);
-//   height: 100%;
-//   border-top-right-radius: var(--search-border-radius);
-//   border-bottom-right-radius: var(--search-border-radius);
-//   font-size: 1.8rem;
-//   color: rgba(22, 24, 35, 0.34);
-//   border: none;
-//   background-color: var(--white);
-//   border-radius: 92px;
-
-//   &:hover {
-//     cursor: pointer;
-//     background-color: rgba(22, 24, 35, 0.03);
-//   }
-=======
 .clear,
 .searchBtn {
   width: var(--search-button-width);
@@ -101,12 +83,11 @@ html {
     cursor: pointer;
     background-color: rgba(22, 24, 35, 0.03);
   }
->>>>>>> 011b539311eeccfa8395dd6925177a850ca7562f
 
-//   &:active {
-//     background-color: rgba(22, 24, 35, 0.06);
-//   }
-// }
+  //   &:active {
+  //     background-color: rgba(22, 24, 35, 0.06);
+  //   }
+}
 
 // body {
 //   font-family: 'Poppins', sans-serif;
