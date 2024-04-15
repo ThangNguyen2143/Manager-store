@@ -24,70 +24,115 @@ html {
   padding-left: 50px;
   padding-right: 50px;
 }
+.footerSpan {
+  font-family: cursive;
+}
 .btn-primary {
   background-color: var(--primary) !important;
   border-color: var(--primary) !important;
 }
-.search {
-  position: relative;
-  width: 361px;
-  height: var(--search-height);
-  padding-left: 16px;
-  display: flex;
-  background-color: rgba(22, 24, 35, 0.06);
-  border-radius: 92px;
-  border: 1.5px solid transparent;
-
-  input {
-    flex: 1;
-    height: 100%;
-    border: none;
-    color: var(--black);
-    font-size: 1.6rem;
-    caret-color: var(--primary);
-    background-color: transparent;
-  }
-
-  input:not(:placeholder-shown) ~ .search-btn {
-    color: rgba(22, 24, 35, 0.75);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: var(--search-top-spacer);
-    right: var(--search-button-width);
-    width: 1px;
-    height: calc(var(--search-height) - var(--search-top-spacer) * 2);
-    background-color: rgba(22, 24, 35, 0.12);
-  }
-  // Khỏi cần hover focus
-  // &:focus-within {
-  //   border-color: rgba(22, 24, 35, 0.2);
-  // }
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: var(--white);
+  color: (var(--primary));
+  margin: 0 0.5rem;
+  border-radius: 50%;
 }
-.clear,
-.searchBtn {
-  width: var(--search-button-width);
-  height: 100%;
-  border-top-right-radius: var(--search-border-radius);
-  border-bottom-right-radius: var(--search-border-radius);
-  font-size: 1.8rem;
-  color: rgba(22, 24, 35, 0.34);
-  border: none;
-  background-color: rgb(234 235 237);
-  border-radius: 92px;
-
-  // Hover cái icon thôi
-  &:hover {
-    cursor: pointer;
-    background-color: rgba(22, 24, 35, 0.03);
-  }
-
-  //   &:active {
-  //     background-color: rgba(22, 24, 35, 0.06);
-  //   }
+.footer-icons i:hover {
+  background: var(--primary);
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
 }
+
+// .search {
+//   position: relative;
+//   width: 361px;
+//   height: var(--search-height);
+//   padding-left: 16px;
+//   display: flex;
+//   background-color: rgba(22, 24, 35, 0.06);
+//   border-radius: 92px;
+//   border: 1.5px solid transparent;
+
+// input {
+//   flex: 1;
+//   height: 100%;
+//   border: none;
+//   color: var(--black);
+//   font-size: 1.6rem;
+//   caret-color: var(--primary);
+//   background-color: transparent;
+
+//   &:focus-within {
+//     border: none;
+//   }
+// }
+
+// input:not(:placeholder-shown) ~ .search-btn {
+//   color: rgba(22, 24, 35, 0.75);
+// }
+
+// &::after {
+//   content: '';
+//   position: absolute;
+//   top: var(--search-top-spacer);
+//   right: var(--search-button-width);
+//   width: 1px;
+//   height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+//   background-color: rgba(22, 24, 35, 0.12);
+// }
+
+// &:focus {
+//   border: none;
+// }
+// Khỏi cần hover focus
+// &:focus-within {
+//   border-color: rgba(22, 24, 35, 0.2);
+// }
+
+// .clear,
+// .searchBtn {
+//   width: var(--search-button-width);
+//   height: 100%;
+//   border-top-right-radius: var(--search-border-radius);
+//   border-bottom-right-radius: var(--search-border-radius);
+//   font-size: 1.8rem;
+//   color: rgba(22, 24, 35, 0.34);
+//   border: none;
+//   background-color: var(--white);
+//   border-radius: 92px;
+
+//   &:hover {
+//     cursor: pointer;
+//     background-color: rgba(22, 24, 35, 0.03);
+//   }
+
+// .clear,
+// .searchBtn {
+//   width: var(--search-button-width);
+//   height: 100%;
+//   border-top-right-radius: var(--search-border-radius);
+//   border-bottom-right-radius: var(--search-border-radius);
+//   font-size: 1.8rem;
+//   color: rgba(22, 24, 35, 0.34);
+//   border: none;
+//   background-color: rgb(234 235 237);
+//   border-radius: 92px;
+//   padding-right: 10px;
+
+//   // Hover cái icon thôi
+//   &:hover {
+//     cursor: pointer;
+//     background-color: rgba(22, 24, 35, 0.03);
+//     padding-left: 12px;
+//   }
+// }
+
+//   &:active {
+//     background-color: rgba(22, 24, 35, 0.06);
+//   }
+// }
 
 // body {
 //   font-family: 'Poppins', sans-serif;

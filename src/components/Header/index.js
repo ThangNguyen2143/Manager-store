@@ -31,12 +31,12 @@ function Header({ isLogin = false }) {
     );
   } else {
     userControl = (
-      <>
+      <div className="flex">
         <LoginForm />
         <Link to={'/register'} className="mx-2">
           <Button>Đăng kí</Button>
         </Link>
-      </>
+      </div>
     );
   }
   return (
@@ -45,19 +45,17 @@ function Header({ isLogin = false }) {
         <Container>
           <Navbar.Brand href="#home">
             <img alt="logo" src="/images/Logo.ico" width="140" height="100" className="d-inline-block align-center" />
-            <span style={{ marginLeft: 5 }}>Nhà Sách TL</span>
+            <span className="ml-5 text-3xl text-[#3cf]">Nhà Sách Thiên Lân</span>
           </Navbar.Brand>
           <Form className="d-flex search">
-            {' '}
-            {/**Sửa chính tả */}
             <Form.Control
               type="search"
-              placeholder="Seach for book"
-              className="me-2"
+              placeholder="Search for book"
+              className="me-2 "
               aria-label="Search"
               spellCheck={false}
             />
-            <button className="searchBtn">
+            <button className="searchBtn ml-2">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
           </Form>
