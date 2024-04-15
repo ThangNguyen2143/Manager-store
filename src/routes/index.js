@@ -7,6 +7,7 @@ import CreateBill from '~/pages/Staff/CreateBill';
 import ListOrders from '~/pages/Staff/ListOrders';
 import ManageProducts from '~/pages/Staff/ManagerProducts';
 import Cart from '~/pages/Cart';
+import About from '~/pages/About';
 
 //Sử dụng để cho khách vãng lai
 const publisRoutes = [
@@ -15,6 +16,7 @@ const publisRoutes = [
   { path: '/docs', component: Documents },
   { path: '/productpage', component: ProductPage },
   { path: '/cart', component: Cart },
+  { path: '/about', component: About },
 ];
 //Sử dụng cho đăng nhập
 const priviteRoutes = [

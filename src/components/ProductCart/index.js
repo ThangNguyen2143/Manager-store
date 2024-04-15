@@ -15,7 +15,12 @@ function ProductCart() {
         <div className="my-12 ml-10 -mr-7 ">Đám Trẻ Ở Đại Dương Đen</div>
         <div className=" my-12 ml-6 sm:ml-96">99.000đ</div>
         <div className="my-12 ml-44 mr-5 ">
-          <button className="py-0.5 px-2 border " onClick={() => setAmount((prev) => prev - 1)}>
+          <button
+            className="py-0.5 px-2 border "
+            onClick={() => {
+              if (amount > 1) setAmount((prev) => prev - 1);
+            }}
+          >
             -
           </button>
           <span className="p-2 ">{amount}</span>
@@ -24,7 +29,7 @@ function ProductCart() {
           </button>
         </div>
         <div>
-          <div className=" my-12 ml-6 sm:ml-36">99.000đ</div>
+          <div className=" my-12 ml-6 sm:ml-36">{amount * 99}.000đ</div>
         </div>
         <div className=" my-12 ml-6 sm:ml-44">Xóa</div>
       </div>
