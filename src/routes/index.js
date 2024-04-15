@@ -6,12 +6,15 @@ import StaffLayout from '~/layouts/StaffLayout';
 import CreateBill from '~/pages/Staff/CreateBill';
 import ListOrders from '~/pages/Staff/ListOrders';
 import ManageProducts from '~/pages/Staff/ManagerProducts';
+import Cart from '~/pages/Cart';
+
 //Sử dụng để cho khách vãng lai
 const publisRoutes = [
   { path: '/', component: Home },
   { path: '/register', component: RegisterForm },
   { path: '/docs', component: Documents },
   { path: '/productpage', component: ProductPage },
+  { path: '/cart', component: Cart },
 ];
 //Sử dụng cho đăng nhập
 const priviteRoutes = [
